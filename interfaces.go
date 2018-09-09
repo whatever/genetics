@@ -10,7 +10,8 @@ type Gene interface {
 type Genes []Gene
 
 type GenePool interface {
-	Generate() Genes
-	Rate()
-	Compete()
+	Generate()
+	Select()
+	Mutate()
+	Best()
 }
